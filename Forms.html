@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; margin:40px;">
+    <h1>Student Registration Form</h1>
+    <p>Please fill in the form below to register as a new student.</p>
+    
+    <form method="get" action="#">
+        <fieldset style="margin-bottom:20px;">
+        <legend><strong>Personal Information</strong></legend>
+
+        <label for="fname">Full Name</label><br>
+        <input type="text" id="fname" name="fullname" placeholder="Borsallino"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="youremail@.com"><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder=""><br><br>
+
+        <label for="dob">Date of Brith</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Gender</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="Female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        </fieldset>
+
+        <fieldset style="margin-bottom:20px;">
+        <legend><strong>Academic Information</strong></legend>
+
+        <label for="prgram">Program Of Study</label><br>
+        <select id="program" name="program">
+            <option value="">--Select Program--</option>
+            <option value="computer-science">Computer Science</option>
+            <option value="information-system">Information System</option>
+            <option value="engineering">Engineering</option>
+            <option value="bussines">Bussines</option>
+        </select><br><br>
+
+        <label>Language Know</label><br>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english">English</label><br>
+        <input type="checkbox" id="indonesia" name="language" value="indonesia">
+        <label for="indonesia">Indonesia</label><br>
+        <input type="checkbox" id="other" name="language" value="other">
+        <label for="other">Other</label><br>
+        </fieldset>
+
+        <fieldset style="margin-bottom:20px;">
+        <legend><strong>Additional Details</strong></legend>
+
+        <label for="address">Address</label><br>
+        <textarea id="address" name="address" rows="4" cols="40" placeholder="Your Address..."></textarea><br>
+
+        <label for="motivation">Why do you want join this program?</label><br>
+        <textarea id="motivation" name="motivation" rows="4" cols="40" placeholder="Write a new sentences..."></textarea><br>
+        </fieldset>
+
+        <input type="reset" value="Reset Form">
+        <input type="submit" value="Submit Registration">
+    </form>
+</body>
+</html>
